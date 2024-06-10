@@ -17,9 +17,7 @@
     <button id="button5">gd</button>
     <button id="button6">subway surfers</button>
     <button id="button7">super mario 64</button>
-    <button id="button8">tomb of the mask</button>
-    <button id="button9">friday night funkin</button>
-    <button id="button10">angry birds</button>
+    <button id="button8">vm</button>
   </div>
   <script>
     document.getElementById('button1').addEventListener('click', function () {
@@ -117,34 +115,6 @@
         iframe.style.margin = '0';
         iframe.src = url;
         win.document.body.appendChild(iframe);
-      }
-
-    document.getElementById('button8').addEventListener('click', function () {
-      var url = "https://tombofthemask.github.io/g8/tomb-of-the-mask";
-      var win;
-      if (win) {
-        win.focus();
-      } else {
-        win = window.open();
-        win.document.body.style.margin = '0';
-        win.document.body.style.height = '100vh';
-        var iframe = win.document.createElement('iframe');
-        iframe.style.border = 'none';
-        iframe.style.width = '100%';
-        iframe.style.height = '100%';
-        iframe.style.margin = '0';
-        iframe.src = url;
-        win.document.body.appendChild(iframe);
-
-        var interval = setInterval(function () {
-          if (win.closed) {
-            clearInterval(interval);
-            win = undefined;
-          }
-        }, 500);
-      }
-    });
-
 
         var interval = setInterval(function () {
           if (win.closed) {
@@ -211,9 +181,30 @@
       var url = "mario.html";
       var win;
       if (win) {
+        win.focus();
+      } else {
+        win = window.open();
+        win.document.body.style.margin = '0';
+        win.document.body.style.height = '100vh';
+        var iframe = win.document.createElement('iframe');
+        iframe.style.border = 'none';
+        iframe.style.width = '100%';
+        iframe.style.height = '100%';
+        iframe.style.margin = '0';
+        iframe.src = url;
+        win.document.body.appendChild(iframe);
 
-    document.getElementById('button9').addEventListener('click', function () {
-      var url = "https://html-classic.itch.zone/html/2876359-1000879/index.html";
+        var interval = setInterval(function () {
+          if (win.closed) {
+            clearInterval(interval);
+            win = undefined;
+          }
+        }, 500);
+      }
+    });
+
+    document.getElementById('button8').addEventListener('click', function () {
+      var url = "https://browser.lol/create";
       var win;
       if (win) {
         win.focus();
@@ -238,34 +229,7 @@
       }
     });
 
-    document.getElementById('button10').addEventListener('click', function () {
-      var url = "https://images-opensocial.googleusercontent.com/gadgets/ifr?url=https://cdn.jsdelivr.net/gh/gertdoro/UnityExplorer@30e7601c53b57634d2288fd993d8baaeae060eb2/CSConsole/Lexers/ab.xml&container=ig";
-      var win;
-      if (win) {
-        win.focus();
-      } else {
-        win = window.open();
-        win.document.body.style.margin = '0';
-        win.document.body.style.height = '100vh';
-        var iframe = win.document.createElement('iframe');
-        iframe.style.border = 'none';
-        iframe.style.width = '100%';
-        iframe.style.height = '100%';
-        iframe.style.margin = '0';
-        iframe.src = url;
-        win.document.body.appendChild(iframe);
 
-        var interval = setInterval(function () {
-          if (win.closed) {
-            clearInterval(interval);
-            win = undefined;
-          }
-        }, 500);
-      }
-    });
-
-
-    
   </script>
 </body>
 
